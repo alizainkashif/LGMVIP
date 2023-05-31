@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Enrollment Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form id="enrollmentForm">
+      <h2>Student Enrollment</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required><br><br>
+
+      <label for="imageLink">Image Link:</label>
+      <input type="url" id="imageLink" required><br><br>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option value="">Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select><br><br>
+
+      <label for="skills">Skills:</label><br>
+      <input type="checkbox" id="html" name="skills" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="checkbox" id="css" name="skills" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+      <label for="javascript">JavaScript</label><br><br>
+
+      <input type="submit" value="Enroll Student">
+      <input type="button" value="Clear" onclick="clearForm()">
+    </form>
+
+    <table id="enrolledStudentsTable">
+      <caption>Enrolled Students</caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Image Link</th>
+          <th>Gender</th>
+          <th>Skills</th>
+        </tr>
+      </thead>
+      <tbody id="enrolledStudentsBody">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js">
+   
+  </script>
+</body>
+</html>
